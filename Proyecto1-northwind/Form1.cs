@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,23 @@ namespace Proyecto1_northwind
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (label1.Text == "")
+            {
+                label1.Text = "HOLAAAAAA";
+
+            }
+            else label1.Text = string.Empty;
+            
+            
         }
     }
 }
