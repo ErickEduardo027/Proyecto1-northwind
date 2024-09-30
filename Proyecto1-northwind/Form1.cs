@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Proyecto1_northwind
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -23,23 +23,20 @@ namespace Proyecto1_northwind
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (label1.Text == "")
-            {
-                label1.Text = "HOLAAAAAA";
 
-            }
-            else label1.Text = string.Empty;
-            
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
-        
+            this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registro registro = new Registro();
+            registro.ShowDialog();
         }
     }
 }

@@ -10,17 +10,24 @@ using System.Windows.Forms;
 
 namespace Proyecto1_northwind
 {
-    public partial class Form2 : Form
+    public partial class Registro : Form
     {
-        public Form2()
+        public Registro()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Login form1 = new Login();
             form1.Show();
+            this.Close();
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
